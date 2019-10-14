@@ -1,5 +1,6 @@
 package com.spbdemo.xxdemo.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,6 +16,7 @@ public class Account {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
     private String name;
+    @JsonIgnore
     private String password;
     private String bio;
 }
