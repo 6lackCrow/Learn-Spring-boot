@@ -3,20 +3,14 @@ package com.spbdemo.xxdemo.controller;
 import com.spbdemo.xxdemo.model.Account;
 import com.spbdemo.xxdemo.repository.AccountRepository;
 import com.spbdemo.xxdemo.server.TestServer;
-import net.bytebuddy.implementation.bytecode.Throw;
-import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.util.List;
 
 @RestController
 public class TestController {
-    @Resource
-    TestServer testServer;
     @Resource
     AccountRepository accountRepository;
 

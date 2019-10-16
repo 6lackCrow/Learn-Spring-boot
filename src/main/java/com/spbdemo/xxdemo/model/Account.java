@@ -8,7 +8,6 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "Accounts")
-
 @Getter
 @Setter
 public class Account {
